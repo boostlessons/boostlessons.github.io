@@ -57,7 +57,7 @@
 }
 
 body{
-    background: lightgray;
+    background: #C63D0F;//lightgray;
 }
 section {
     border-radius: 20px;
