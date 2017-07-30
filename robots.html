@@ -1,0 +1,98 @@
+<head>
+ <link rel="stylesheet" type="text/css" href="style.css">
+<style>
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+</style>
+</head>
+<body>
+  <div style="max-width: 1024px;margin:0 auto;">
+<div class="topnav" id="myTopnav" style="width:100%">
+  <a href="index.html">Home</a>
+  <a href="lessons.html">Lessons</a>
+  <a href="robots.html">Robot Designs</a>
+  <a href="about.html">About Us</a>
+</div><br>
+  <section style="padding: 5px 5px 5px 15px;">
+
+  <h2>Robot Designs:</h2>
+</section><br><section> <div class="text-body" style="font-size: 20px;">
+
+<!--start accordian-->
+<button class="accordion">2 Minute Bot</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Tready</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Ultimate BOOST</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<!--end-->
+</div>
+
+</section>
+<br>
+<div class="navbar" >
+  <center><p>Copyright (C) Seshan Brothers/Boostlessons.com 2017<br>
+  LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.</p></center>
+</div>
+  </div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+
+</body>
+

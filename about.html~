@@ -1,0 +1,54 @@
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div style="max-width: 1024px;margin:0 auto;">
+<div class="topnav" id="myTopnav" style="width:100%">
+  <a href="index.html">Home</a>
+  <a href="lessons.html">Lessons</a>
+  <a href="robots.html">Robot Designs</a>
+  <a href="about.html">About Us</a>
+</div><br>
+  <section>
+
+<style>
+.mySlides {display:none;}
+</style>
+<div class="w3-content w3-section" style="max-width:1024px">
+  <img class="mySlides" src="images/slider/main.png" style="width:100%">
+  <img class="mySlides" src="images/slider/boost.png" style="width:100%">
+<!--  <img class="mySlides" src="img_chicago.jpg" style="width:100%">-->
+</div>
+<div class="text-body" style="font-size: 20px;">
+  <br><br>  Welcome to Boost Lessons.com! This site is currently under construction. You can find cool builds and lessons for your BOOST on this site!
+
+  <br /><br>
+  Updates:<br>
+  29 July 2017: Site Created!
+  
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
+</section>
+
+  </div><br>
+<div class="navbar" >
+  <center><p>Copyright (C) Seshan Brothers/Boostlessons.com 2017<br>
+  LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.</p></center>
+</div>
+</body>
