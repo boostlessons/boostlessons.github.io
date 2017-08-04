@@ -1,34 +1,41 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="css/slider.css">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 
 <title>BOOSTLessons | by Seshan Brothers</title>
 </head>
 <body>
   <div style="max-width: 1024px;margin:0 auto;">
-<div class="topnav" id="myTopnav" style="width:100%">
-  <a href="index.html">Home</a>
-  <a href="lessons.html">Lessons</a>
-  <a href="robots.html">Robot Designs</a>
-  <a href="about.html">About Us</a>
-  <a href="http://www.ev3lessons.com/">EV3 Lessons</a>
-</div><br>
-  <section>
 
-<style>
-.mySlides {display:none;}
-</style>
-<div class="w3-content w3-section" style="max-width:1024px">
-  <img class="mySlides" src="images/slider/logo.png" style="width:100%;    border-radius: 13px;
-">  <img class="mySlides" src="images/slider/main.png" style="width:100%;    border-radius: 13px;
-">
-  <img class="mySlides" src="images/slider/boost.png" style="width:100%;    border-radius: 13px;
-">
-<!--  <img class="mySlides" src="img_chicago.jpg" style="width:100%;    border-radius: 13px;
-">-->
+    <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+    });
+    </script>
+     <div id="header"></div>
+
+<br>
+ <!-- <section>
+-->
+
+<div class="w3-content w3-section" style="max-width:100%; background-color:white;border-radius: 20px;">
+
+  <img class="mySlides w3-animate-fading" src="images/slider/logo.png" style="width:100%; border-radius: 20px;">
+  <img class="mySlides w3-animate-fading" src="images/slider/main.png" style="width:100%; border-radius: 20px;">
+  <img class="mySlides w3-animate-fading" src="images/slider/boost.png" style="width:100%; border-radius: 20px;">
+  
 </div>
+
+<!--
+</section>--><br><section>
+
 <div class="text-body" style="font-size: 20px;">
-  <br><br>  Welcome to BOOSTLessons.com! You can find cool builds and lessons to expand your usage of the BOOST Creative Toolbox on this site! If you have a fun BOOST build you would like to share with us, please email.This site is currently under construction.<br>
+  Welcome to BOOSTLessons.com! You can find cool builds and lessons to expand your usage of the BOOST Creative Toolbox on this site! If you have a fun BOOST build you would like to share with us, please email.This site is currently under construction.<br>
   Photo Credit: LEGO
   <br>
   <h3>What is BOOST?</h3>
@@ -40,27 +47,14 @@ BOOST Creative Toolbox is a new product by LEGO(R) that is for ages 7 and up. Li
   
 </div>
 
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000); // Change image every 4 seconds
-}
-</script>
+<script src="js/slider.js"></script>
 </section>
 <br>
-<div class="navbar" >
-  <center><p>Copyright (C) Seshan Brothers/Boostlessons.com 2017<br>
-  LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site.</p></center>
-</div>
+    <script> 
+    $(function(){
+      $("#footer").load("footer.html"); 
+    });
+    </script>
+     <div id="footer"></div>
   </div>
 </body>
